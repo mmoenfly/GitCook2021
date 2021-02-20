@@ -4,6 +4,7 @@
 // MVID: 9CF783A5-38FA-472F-8C51-9A2203433095
 // Assembly location: E:\git\partialbits\PartialBeta.exe
 
+using Newtonsoft.Json.Linq;
 using Partial.WSCustomer;
 using Partial.wslogger;
 using Partial.WSPartials;
@@ -30,6 +31,7 @@ namespace Partial
         private NameValueCollection nMethods;
         private static string sHost = "https://spreporting.app-garden.com";
         private static string sTarget = "C:\\CCI\\", SDominoPwd, SDominoUserid, sDeskTopFolderName, sIconFile,sUnidEmail;
+        private static JArray sDeleteFolders;
         private static string sUnid, sDir;
         private static string sCurrentFile;
         private static string sEmail;
@@ -58,7 +60,7 @@ namespace Partial
             Console.WriteLine("The Arg {0} is {1}:", 3, args[3]);
             Console.WriteLine("The Dir is {0} :", sDir);
 
-
+            
             string fullName = Assembly.GetExecutingAssembly().FullName;
 
 
@@ -107,10 +109,21 @@ namespace Partial
                 sHost = (string)Jsonobj["server"];
                 SDominoUserid = (string)Jsonobj["key1"];
                 SDominoPwd = (string)Jsonobj["key2"];
+                sDeleteFolders = (JArray)Jsonobj["DeleteFolders"];
                 sDeskTopFolderName = (string)Jsonobj["DesktopFolderName"];
                 sIconFile = (string)Jsonobj["iconFile"];
                 FileInfo fi2 = new FileInfo(path1 + "\\creds.json");
                 fi2.Delete();
+                var temploc = (string)Jsonobj["installationDefaultMain"];
+                if (args[3] == "")
+                {
+                    DownloadInstall.sTarget = (string)Jsonobj["installationDefaultMain"];
+                }
+                if (args[3] != temploc)
+                {
+                    DownloadInstall.sTarget = (string)Jsonobj["installationDefaultMain"];
+
+                }
             }
             catch (Exception ex)
             {
@@ -121,6 +134,47 @@ namespace Partial
             }
 
 
+            try
+            {
+                FileInfo fileInfo4 = new FileInfo(DownloadInstall.sTarget + "CleanDirs.vbs");
+                if (fileInfo4.Exists)
+                    fileInfo4.Delete();
+                DownloadInstall.DownLoadASheet(DownloadInstall.sHost + "/Xml/CleanDirs.vbs", DownloadInstall.sTarget + "/CleanDirs.vbs");
+                string str6 = "  " + DownloadInstall.sTarget + "CleanDirs.vbs ";
+                foreach ( JValue itm in sDeleteFolders)
+                {
+                    try
+                    {
+                        Process process1 = new Process();
+                        process1.StartInfo.FileName = "wscript.exe";
+                        process1.StartInfo.Arguments = DownloadInstall.sTarget + "\\CleanDirs.vbs " + "\"" +  itm.ToString() + "\"";
+                        process1.StartInfo.UseShellExecute = true;
+                        process1.StartInfo.WorkingDirectory = DownloadInstall.sTarget;
+                        process1.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
+                        process1.Start();
+                        process1.WaitForExit();
+                        process1.Close();
+                       
+
+                    }
+                    catch (Exception ex) {
+                        Console.WriteLine(ex.Message);
+                    }
+                }
+
+            }
+            catch(Exception ex)
+            {
+
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+
+                FileInfo fileInfo4 = new FileInfo(DownloadInstall.sTarget + "\\CleanDirs.vbs");
+                if (fileInfo4.Exists)
+                    fileInfo4.Delete();
+            }
 
             try
             {

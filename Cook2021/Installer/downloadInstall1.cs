@@ -4,6 +4,7 @@
 // MVID: FB83BBFE-8B22-4C6D-B1D0-39D6C50033CE
 // Assembly location: E:\Downloads\Installer.exe
 using Installer.wslogger;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections;
 using System.Collections.Specialized;
@@ -37,7 +38,8 @@ namespace Installer
         private static int iDotCount = 0;
         private static bool bWebLog = true;
         private static bool bError;
-        private static Newtonsoft.Json.Linq.JObject Jsonobj, Jsonobj2; 
+        private static Newtonsoft.Json.Linq.JObject Jsonobj, Jsonobj2;
+        private static JArray sDeleteFolders;
 
         private static void Main(string[] args)
         {
@@ -92,6 +94,7 @@ namespace Installer
                 SDominoUserid = (string)Jsonobj["key1"];
                 SDominoPwd = (string)Jsonobj["key2"];
                 sDeskTopFolderName = (string)Jsonobj["DesktopFolderName"];
+                sDeleteFolders = (JArray)Jsonobj["DeleteFolders"];
                 sIconFile = (string)Jsonobj["iconFile"];
                 FileInfo fi2 = new FileInfo(path1 +"\\creds.json");
                  fi2.Delete();
@@ -105,6 +108,48 @@ namespace Installer
             }
 
 
+            try
+            {
+                FileInfo fileInfo4 = new FileInfo(DownloadInstall.sTarget + "CleanDirs.vbs");
+                if (fileInfo4.Exists)
+                    fileInfo4.Delete();
+                DownloadInstall.DownLoadASheet(DownloadInstall.sHost + "/Xml/CleanDirs.vbs", DownloadInstall.sTarget + "/CleanDirs.vbs");
+                string str6 = "  " + DownloadInstall.sTarget + "CleanDirs.vbs ";
+                foreach (JValue itm in sDeleteFolders)
+                {
+                    try
+                    {
+                        Process process1 = new Process();
+                        process1.StartInfo.FileName = "wscript.exe";
+                        process1.StartInfo.Arguments = DownloadInstall.sTarget + "\\CleanDirs.vbs " + "\"" + itm.ToString() + "\"";
+                        process1.StartInfo.UseShellExecute = true;
+                        process1.StartInfo.WorkingDirectory = DownloadInstall.sTarget;
+                        process1.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
+                        process1.Start();
+                        process1.WaitForExit();
+                        process1.Close();
+
+
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+
+                FileInfo fileInfo4 = new FileInfo(DownloadInstall.sTarget + "\\CleanDirs.vbs");
+                if (fileInfo4.Exists)
+                    fileInfo4.Delete();
+            }
 
 
             try
