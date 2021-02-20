@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NamedParameter" xml:space="preserve">
+    <value>named</value>
+  </data>
+  <data name="VerboseHelpInfo" xml:space="preserve">
+    <value>For more information, type: </value>
+  </data>
+  <data name="ContentColon" xml:space="preserve">
+    <value>Content:</value>
+  </data>
+  <data name="Capabilities" xml:space="preserve">
+    <value>CAPABILITIES</value>
+  </data>
+  <data name="Answer" xml:space="preserve">
+    <value>Answer</value>
+  </data>
+  <data name="TermColon" xml:space="preserve">
+    <value>Term:</value>
+  </data>
+  <data name="Drives" xml:space="preserve">
+    <value>DRIVES</value>
+  </data>
+  <data name="InputType" xml:space="preserve">
+    <value>INPUTS</value>
+  </data>
+  <data name="ProviderName" xml:space="preserve">
+    <value>PROVIDER NAME</value>
+  </data>
+  <data name="TerminatingErrors" xml:space="preserve">
+    <value>TERMINATING ERRORS</value>
+  </data>
+  <data name="Output" xml:space="preserve">
+    <value>OUTPUT</value>
+  </data>
+  <data name="TypeColon" xml:space="preserve">
+    <value>Type: </value>
+  </data>
+  <data name="Parameters" xml:space="preserve">
+    <value>PARAMETERS</value>
+  </data>
+  <data name="Syntax" xml:space="preserve">
+    <value>SYNTAX</value>
+  </data>
+  <data name="CommonParameters" xml:space="preserve">
+    <value>&lt;CommonParameters&gt;</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>(Category: </value>
+  </data>
+  <data name="RelatedLinks" xml:space="preserve">
+    <value>RELATED LINKS</value>
+  </data>
+  <data name="DynamicParameters" xml:space="preserve">
+    <value>DYNAMIC PARAMETERS</value>
+  </data>
+  <data name="ParameterDefaultValue" xml:space="preserve">
+    <value>Default value                </value>
+  </data>
+  <data name="Synopsis" xml:space="preserve">
+    <value>SYNOPSIS</value>
+  </data>
+  <data name="DetailedDescription" xml:space="preserve">
+    <value>DESCRIPTION</value>
+  </data>
+  <data name="CmdletsSupported" xml:space="preserve">
+    <value>Cmdlets Supported: </value>
+  </data>
+  <data name="NonHyphenTerminatingErrors" xml:space="preserve">
+    <value>NON-TERMINATING ERRORS</value>
+  </data>
+  <data name="AcceptsWildCardCharacters" xml:space="preserve">
+    <value>Accept wildcard characters?  </value>
+  </data>
+  <data name="TargetObjectTypeColon" xml:space="preserve">
+    <value>Target Object Type:   </value>
+  </data>
+  <data name="ParameterPosition" xml:space="preserve">
+    <value>Position?                    </value>
+  </data>
+  <data name="ReturnType" xml:space="preserve">
+    <value>OUTPUTS</value>
+  </data>
+  <data name="ParameterRequired" xml:space="preserve">
+    <value>Required?                    </value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>NOTES</value>
+  </data>
+  <data name="Tasks" xml:space="preserve">
+    <value>TASKS</value>
+  </data>
+  <data name="TitleColon" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="SuggestedActionColon" xml:space="preserve">
+    <value>Suggested Action: </value>
+  </data>
+  <data name="RemarksSection" xml:space="preserve">
+    <value>REMARKS</value>
+  </data>
+  <data name="Example" xml:space="preserve">
+    <value>Example</value>
+  </data>
+  <data name="ExampleUpperCase" xml:space="preserve">
+    <value>EXAMPLE</value>
+  </data>
+  <data name="ExampleHelpInfo" xml:space="preserve">
+    <value>To see the examples, type: </value>
+  </data>
+  <data name="OutputColon" xml:space="preserve">
+    <value>Output:</value>
+  </data>
+  <data name="Examples" xml:space="preserve">
+    <value>EXAMPLES</value>
+  </data>
+  <data name="FullHelpInfo" xml:space="preserve">
+    <value>For technical information, type: </value>
+  </data>
+  <data name="FalseShort" xml:space="preserve">
+    <value>false</value>
+  </data>
+  <data name="BaseCmdletInformation" xml:space="preserve">
+    <value>    This cmdlet supports the common parameters: Verbose, Debug,
+    ErrorAction, ErrorVariable, WarningAction, WarningVariable,
+    OutBuffer and OutVariable. For more information, type,
+    "get-help about_commonparameters".</value>
+  </data>
+  <data name="ShortDescription" xml:space="preserve">
+    <value>SHORT DESCRIPTION</value>
+  </data>
+  <data name="DefinitionColon" xml:space="preserve">
+    <value>Definition:</value>
+  </data>
+  <data name="TrueShort" xml:space="preserve">
+    <value>true</value>
+  </data>
+  <data name="CmdletsSupportedCaps" xml:space="preserve">
+    <value>CMDLETS SUPPORTED</value>
+  </data>
+  <data name="Filters" xml:space="preserve">
+    <value>FILTERS</value>
+  </data>
+  <data name="AcceptsPipelineInput" xml:space="preserve">
+    <value>Accept pipeline input?       </value>
+  </data>
+  <data name="QuestionColon" xml:space="preserve">
+    <value>Question:</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>NAME</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>TASK: </value>
+  </data>
+</root>

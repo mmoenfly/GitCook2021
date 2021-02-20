@@ -1,0 +1,48 @@
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\bin\Debug\Installer.exe.config
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\bin\Debug\Installer.exe
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\bin\Debug\Installer.pdb
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\bin\Debug\Microsoft.Office.Interop.Excel.dll
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\bin\Debug\office.dll
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\bin\Debug\Microsoft.Office.Interop.Excel.xml
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\bin\Debug\office.xml
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\obj\Debug\Installer.exe
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\obj\Debug\Installer.pdb
+E:\git\Installer\bin\Debug\Installer.exe.config
+E:\git\Installer\bin\Debug\Installer.exe
+E:\git\Installer\bin\Debug\Installer.pdb
+E:\git\Installer\bin\Debug\microsoft.msxml.dll
+E:\git\Installer\bin\Debug\Microsoft.Office.Interop.Excel.dll
+E:\git\Installer\bin\Debug\Newtonsoft.Json.dll
+E:\git\Installer\bin\Debug\office.dll
+E:\git\Installer\bin\Debug\Microsoft.Vbe.Interop.dll
+E:\git\Installer\bin\Debug\stdole.dll
+E:\git\Installer\bin\Debug\Microsoft.Office.Interop.Excel.xml
+E:\git\Installer\bin\Debug\Newtonsoft.Json.xml
+E:\git\Installer\bin\Debug\office.xml
+E:\git\Installer\obj\Debug\Installer.csprojAssemblyReference.cache
+E:\git\Installer\obj\Debug\Installer.csproj.CoreCompileInputs.cache
+E:\git\Installer\obj\Debug\Installer.csproj.CopyComplete
+E:\git\Installer\obj\Debug\Installer.exe
+E:\git\Installer\obj\Debug\Installer.pdb
+E:\GitCook2021\Cook2021\Installer\bin\Debug\Installer.exe.config
+E:\GitCook2021\Cook2021\Installer\bin\Debug\Installer.exe
+E:\GitCook2021\Cook2021\Installer\bin\Debug\Installer.pdb
+E:\GitCook2021\Cook2021\Installer\bin\Debug\microsoft.msxml.dll
+E:\GitCook2021\Cook2021\Installer\bin\Debug\Microsoft.Office.Interop.Excel.dll
+E:\GitCook2021\Cook2021\Installer\bin\Debug\Newtonsoft.Json.dll
+E:\GitCook2021\Cook2021\Installer\bin\Debug\office.dll
+E:\GitCook2021\Cook2021\Installer\bin\Debug\Microsoft.Vbe.Interop.dll
+E:\GitCook2021\Cook2021\Installer\bin\Debug\stdole.dll
+E:\GitCook2021\Cook2021\Installer\bin\Debug\Microsoft.Office.Interop.Excel.xml
+E:\GitCook2021\Cook2021\Installer\bin\Debug\Newtonsoft.Json.xml
+E:\GitCook2021\Cook2021\Installer\bin\Debug\office.xml
+E:\GitCook2021\Cook2021\Installer\obj\Debug\Installer.csproj.CoreCompileInputs.cache
+E:\GitCook2021\Cook2021\Installer\obj\Debug\Installer.csproj.CopyComplete
+E:\GitCook2021\Cook2021\Installer\obj\Debug\Installer.exe
+E:\GitCook2021\Cook2021\Installer\obj\Debug\Installer.pdb
+E:\GitCook2021\Cook2021\Installer\bin\Debug\System.Management.Automation.dll
+E:\GitCook2021\Cook2021\Installer\bin\Debug\Microsoft.Management.Infrastructure.dll
+E:\GitCook2021\Cook2021\Installer\bin\Debug\System.Management.Automation.xml
+E:\GitCook2021\Cook2021\Installer\obj\Debug\Installer.csprojAssemblyReference.cache

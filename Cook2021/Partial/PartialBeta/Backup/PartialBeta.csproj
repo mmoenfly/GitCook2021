@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\git\partialbits\PartialBeta.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FDCB13E9-0DA2-41EF-8910-B154DE29F54E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>PartialBeta</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>4.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Partial</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel">
+      <HintPath>lib\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DownloadInstall.cs" />
+    <Compile Include="DocDetails.cs" />
+    <Compile Include="Products.cs" />
+    <Compile Include="PcId.cs" />
+    <Compile Include="WSCustomer\GetCustomersPartialService.cs" />
+    <Compile Include="WSCustomer\GETCUSTOMERSPARTIALCompletedEventHandler.cs" />
+    <Compile Include="WSCustomer\GETCUSTOMERSPARTIALCompletedEventArgs.cs" />
+    <Compile Include="wslogger\Ws_Logger.cs" />
+    <Compile Include="wslogger\MyTest.cs" />
+    <Compile Include="wslogger\LoggerCompletedEventHandler.cs" />
+    <Compile Include="wslogger\LoggerCompletedEventArgs.cs" />
+    <Compile Include="wslogger\ChkInstallCompletedEventHandler.cs" />
+    <Compile Include="wslogger\ChkInstallCompletedEventArgs.cs" />
+    <Compile Include="wslogger\UpdInstallCompletedEventHandler.cs" />
+    <Compile Include="wslogger\FindNextIdCompletedEventHandler.cs" />
+    <Compile Include="wslogger\FindNextIdCompletedEventArgs.cs" />
+    <Compile Include="wslogger\TestdCompletedEventHandler.cs" />
+    <Compile Include="wslogger\TestdCompletedEventArgs.cs" />
+    <Compile Include="wslogger\RndCustXmlCompletedEventHandler.cs" />
+    <Compile Include="wslogger\RndCustXmlCompletedEventArgs.cs" />
+    <Compile Include="WSPartials\RemovePartialFlagsService.cs" />
+    <Compile Include="WSPartials\REMOVEPARTIALFLAGSCompletedEventHandler.cs" />
+    <Compile Include="WSPartials\REMOVEPARTIALFLAGSCompletedEventArgs.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

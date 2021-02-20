@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="https://spreporting.app-garden.com/apps/wslogger/ws_logger.asmx?wsdl" docRef="https://spreporting.app-garden.com/apps/wslogger/ws_logger.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="https://spreporting.app-garden.com/apps/wslogger/ws_logger.asmx" xmlns:q1="http://installs.ccisupportsite.com/wslogger/" binding="q1:Ws_LoggerSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="https://spreporting.app-garden.com/apps/wslogger/ws_logger.asmx" xmlns:q2="http://installs.ccisupportsite.com/wslogger/" binding="q2:Ws_LoggerSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

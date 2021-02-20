@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://installs.ccisupportsite.com/wslogger/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://installs.ccisupportsite.com/wslogger/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://installs.ccisupportsite.com/wslogger/">
+      <s:element name="Logger">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUnid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sMessage" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="iStatus" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="iBatchid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoggerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoggerResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChkInstall">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUnid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChkInstallResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChkInstallResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdInstall">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUnid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="val" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdInstallResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="FindNextId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUnid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindNextIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindNextIdResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Testd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sList" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TestdResult" type="tns:MyTest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="MyTest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="test" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="errmsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RndCustXml">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sSourceXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sUnid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RndCustXmlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RndCustXmlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LoggerSoapIn">
+    <wsdl:part name="parameters" element="tns:Logger" />
+  </wsdl:message>
+  <wsdl:message name="LoggerSoapOut">
+    <wsdl:part name="parameters" element="tns:LoggerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChkInstallSoapIn">
+    <wsdl:part name="parameters" element="tns:ChkInstall" />
+  </wsdl:message>
+  <wsdl:message name="ChkInstallSoapOut">
+    <wsdl:part name="parameters" element="tns:ChkInstallResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdInstallSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdInstall" />
+  </wsdl:message>
+  <wsdl:message name="UpdInstallSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdInstallResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindNextIdSoapIn">
+    <wsdl:part name="parameters" element="tns:FindNextId" />
+  </wsdl:message>
+  <wsdl:message name="FindNextIdSoapOut">
+    <wsdl:part name="parameters" element="tns:FindNextIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestdSoapIn">
+    <wsdl:part name="parameters" element="tns:Testd" />
+  </wsdl:message>
+  <wsdl:message name="TestdSoapOut">
+    <wsdl:part name="parameters" element="tns:TestdResponse" />
+  </wsdl:message>
+  <wsdl:message name="RndCustXmlSoapIn">
+    <wsdl:part name="parameters" element="tns:RndCustXml" />
+  </wsdl:message>
+  <wsdl:message name="RndCustXmlSoapOut">
+    <wsdl:part name="parameters" element="tns:RndCustXmlResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Ws_LoggerSoap">
+    <wsdl:operation name="Logger">
+      <wsdl:input message="tns:LoggerSoapIn" />
+      <wsdl:output message="tns:LoggerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChkInstall">
+      <wsdl:input message="tns:ChkInstallSoapIn" />
+      <wsdl:output message="tns:ChkInstallSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdInstall">
+      <wsdl:input message="tns:UpdInstallSoapIn" />
+      <wsdl:output message="tns:UpdInstallSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindNextId">
+      <wsdl:input message="tns:FindNextIdSoapIn" />
+      <wsdl:output message="tns:FindNextIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Testd">
+      <wsdl:input message="tns:TestdSoapIn" />
+      <wsdl:output message="tns:TestdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RndCustXml">
+      <wsdl:input message="tns:RndCustXmlSoapIn" />
+      <wsdl:output message="tns:RndCustXmlSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Ws_LoggerSoap" type="tns:Ws_LoggerSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Logger">
+      <soap:operation soapAction="http://installs.ccisupportsite.com/wslogger/Logger" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChkInstall">
+      <soap:operation soapAction="http://installs.ccisupportsite.com/wslogger/ChkInstall" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdInstall">
+      <soap:operation soapAction="http://installs.ccisupportsite.com/wslogger/UpdInstall" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindNextId">
+      <soap:operation soapAction="http://installs.ccisupportsite.com/wslogger/FindNextId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Testd">
+      <soap:operation soapAction="http://installs.ccisupportsite.com/wslogger/Testd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RndCustXml">
+      <soap:operation soapAction="http://installs.ccisupportsite.com/wslogger/RndCustXml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Ws_LoggerSoap12" type="tns:Ws_LoggerSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Logger">
+      <soap12:operation soapAction="http://installs.ccisupportsite.com/wslogger/Logger" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChkInstall">
+      <soap12:operation soapAction="http://installs.ccisupportsite.com/wslogger/ChkInstall" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdInstall">
+      <soap12:operation soapAction="http://installs.ccisupportsite.com/wslogger/UpdInstall" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindNextId">
+      <soap12:operation soapAction="http://installs.ccisupportsite.com/wslogger/FindNextId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Testd">
+      <soap12:operation soapAction="http://installs.ccisupportsite.com/wslogger/Testd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RndCustXml">
+      <soap12:operation soapAction="http://installs.ccisupportsite.com/wslogger/RndCustXml" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Ws_Logger">
+    <wsdl:port name="Ws_LoggerSoap" binding="tns:Ws_LoggerSoap">
+      <soap:address location="https://spreporting.app-garden.com/apps/wslogger/ws_logger.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Ws_LoggerSoap12" binding="tns:Ws_LoggerSoap12">
+      <soap12:address location="https://spreporting.app-garden.com/apps/wslogger/ws_logger.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,14 @@
+{
+	"server": "https://spreporting.app-garden.com",
+	"key1": "spadmin",
+	"key2": "Gar2020@*ss",
+	"installationDefaultMain": "C:\\AGReportMain",
+	"installationDefaultArchive": "C:\\AGReportArchive",
+	"DesktopFolderName": "App Garden Reporting",
+	"DeleteFolders": ["c:\\as400", "c:\\da400","c:\\AGReportingMain" ]
+  
+
+
+
+
+}

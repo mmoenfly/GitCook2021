@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:intf="urn:DefaultNamespace" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:impl="urn:DefaultNamespace" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="urn:DefaultNamespace" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types />
+  <wsdl:message name="GETCUSTOMERSPARTIALResponse">
+    <wsdl:part name="GETCUSTOMERSPARTIALReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GETCUSTOMERSPARTIALRequest">
+    <wsdl:part name="DBNAME" type="xsd:string" />
+    <wsdl:part name="VIEWNAME" type="xsd:string" />
+    <wsdl:part name="MYUNID" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="GetCustomersPartial">
+    <wsdl:operation name="GETCUSTOMERSPARTIAL" parameterOrder="DBNAME VIEWNAME MYUNID">
+      <wsdl:input name="GETCUSTOMERSPARTIALRequest" message="impl:GETCUSTOMERSPARTIALRequest" />
+      <wsdl:output name="GETCUSTOMERSPARTIALResponse" message="impl:GETCUSTOMERSPARTIALResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DominoSoapBinding" type="impl:GetCustomersPartial">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="GETCUSTOMERSPARTIAL">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="GETCUSTOMERSPARTIALRequest">
+        <wsdlsoap:body use="encoded" namespace="urn:DefaultNamespace" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="GETCUSTOMERSPARTIALResponse">
+        <wsdlsoap:body use="encoded" namespace="urn:DefaultNamespace" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GetCustomersPartialService">
+    <wsdl:port name="Domino" binding="impl:DominoSoapBinding">
+      <wsdlsoap:address location="http://spinstalls.app-garden.com:80/cciweb.nsf/GetPartialCustomers?OpenWebService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="InvalidSchemeValue" xml:space="preserve">
+    <value>{0} is an invalid scheme value. Valid values are "http" and "https".</value>
+  </data>
+  <data name="ServerRequestedToCloseSession" xml:space="preserve">
+    <value>Server has requested to close the session.</value>
+  </data>
+  <data name="IPCCloseTimedOut" xml:space="preserve">
+    <value>The client did not receive a response for close operation in the specified time interval. This might happen when a command is not responding to a stop message in a timely manner.</value>
+  </data>
+  <data name="RunspaceAlreadyExists" xml:space="preserve">
+    <value>Session already exists. Trying to create Session again with the same client Session InstanceId {0} is not allowed.</value>
+  </data>
+  <data name="RemoteRunspaceHasMultipleMatchesForSpecifiedName" xml:space="preserve">
+    <value>Multiple matches found for name {0}.</value>
+  </data>
+  <data name="NcsCannotDeleteFileAfterInstall" xml:space="preserve">
+    <value>New shell successfully registered. However cannot delete temporary file {0}. Reason for failure: {1}.</value>
+  </data>
+  <data name="ProxyAmbiguosAuthentication" xml:space="preserve">
+    <value>{0} cannot be specified as a proxy authentication mechanism. Only {1},{2} or {3} are supported for proxy authentication.</value>
+  </data>
+  <data name="StartupScriptNotCorrect" xml:space="preserve">
+    <value>"{0}" must specify a PowerShell script file that ends with extension ".ps1".</value>
+  </data>
+  <data name="ClientNotFoundCapabilityProperties" xml:space="preserve">
+    <value>{0}. Negotiation with the server failed. Make sure the server is compatible with the build {1} and the protocol version {2} of PowerShell.</value>
+  </data>
+  <data name="MissingProperty" xml:space="preserve">
+    <value>Remoting data is missing {0} property.</value>
+  </data>
+  <data name="DuplicateInitializationParameterFound" xml:space="preserve">
+    <value>The {0} parameter is already specified in the {1} section. Contact your administrator to make sure that {0} is specified only once.</value>
+  </data>
+  <data name="ReceivedDataSizeExceededMaximumServer" xml:space="preserve">
+    <value>The total data received from the remote client exceeded allowed maximum. Allowed maximum is {0}.</value>
+  </data>
+  <data name="BlobLengthNotInRange" xml:space="preserve">
+    <value>Fragment blob length is out of range: {0}</value>
+  </data>
+  <data name="ObjectIdCannotBeLessThanZero" xml:space="preserve">
+    <value>ObjectId cannot be less than or equal to 0. This may happen if the fragments are not properly constructed by the remote machine or the data might have been tampered with.</value>
+  </data>
+  <data name="IPCUnknownNodeType" xml:space="preserve">
+    <value>Cannot process an element with node type "{0}". Only {1} and {2} node types are supported.</value>
+  </data>
+  <data name="DecodingErrorForRunspaceStateInfo" xml:space="preserve">
+    <value>Error in decoding RunspaceStateInfo.</value>
+  </data>
+  <data name="DecodingErrorForRunspacePoolStateInfo" xml:space="preserve">
+    <value>Error in decoding RunspacePoolStateInfo.</value>
+  </data>
+  <data name="WildCardErrorFilePathParameter" xml:space="preserve">
+    <value>Wildcards are not supported for FilePath parameter. Specify a path without wildcards.</value>
+  </data>
+  <data name="JobWithSpecifiedSessionIdNotFound" xml:space="preserve">
+    <value>The command cannot find the job because the {0} session identifier was not found. Verify the value of the Id parameter and then try the command again.</value>
+  </data>
+  <data name="RemovePSJobWhatIfTarget" xml:space="preserve">
+    <value>Remote Command: {0}, associated with job whose session identifier is "{1}".</value>
+  </data>
+  <data name="EcsWSManQCQuery" xml:space="preserve">
+    <value>Running command "{0}" to enable this machine for remote management through WinRM service.
+ This includes:
+    1. Starting or restarting (if already started) the WinRM service
+    2. Setting the WinRM service type to auto start
+    3. Creating a listener to accept requests on any IP address
+    4. Enabling firewall exception for WS-Management traffic (for http only).
+
+Do you want to continue?</value>
+  </data>
+  <data name="PipelineStopped" xml:space="preserve">
+    <value>The remote pipeline has been stopped.</value>
+  </data>
+  <data name="EDcsRequiresElevation" xml:space="preserve">
+    <value>Access is denied. You need to run this cmdlet from an elevated process.</value>
+  </data>
+  <data name="NoAttributesFoundForParamElement" xml:space="preserve">
+    <value>Expected "{0}" and "{1}" attributes in "{2}" element.</value>
+  </data>
+  <data name="PipelineIdsDoNotMatch" xml:space="preserve">
+    <value>Pipeline Id "{0}" does not match the currently executing pipeline's InstanceId "{1}".</value>
+  </data>
+  <data name="NotEnoughHeaderForRemoteDataObject" xml:space="preserve">
+    <value>Error in decoding data received from remote machine. Need at least {0} bytes of data to decode a deserialized object received from remote machine. This may happen if the fragments are not properly constructed by the remote machine or the data might have been tampered with.</value>
+  </data>
+  <data name="RestartWSManServiceAction" xml:space="preserve">
+    <value>"Restart-Service"</value>
+  </data>
+  <data name="FragmetIdsNotInSequence" xml:space="preserve">
+    <value>The FragmentId's of the same object must be in sequence with increment of 1. This may happen if the fragments are not properly constructed by the remote machine or the data might have been tampered with.</value>
+  </data>
+  <data name="NativeReadFileFailed" xml:space="preserve">
+    <value>Native API call to ReadFile failed. Error code is {0}.</value>
+  </data>
+  <data name="CommandSendExCallBackError" xml:space="preserve">
+    <value>Sending data to a remote command failed with the following error message: {0}</value>
+  </data>
+  <data name="EcsWSManQCCaption" xml:space="preserve">
+    <value>WinRM Quick Configuration</value>
+  </data>
+  <data name="ClientNegotiationFailed" xml:space="preserve">
+    <value>PowerShell client does not support the {0} {1} negotiated by the server. Make sure the server is compatible with the build {2} and the protocol version {3} of PowerShell.</value>
+  </data>
+  <data name="JobWithSpecifiedNameNotCompleted" xml:space="preserve">
+    <value>The command cannot remove the job with the {0} session identifier and the {1} name because the job is not finished. To remove the job, first stop the job, or use the Force parameter.</value>
+  </data>
+  <data name="JobWithSpecifiedInstanceIdNotFound" xml:space="preserve">
+    <value>The command cannot find the job with the {0} instance identifier because the identifier was not found. Verify the value of the InstanceId parameter, and then try the command again.</value>
+  </data>
+  <data name="RunShellCommandExFailed" xml:space="preserve">
+    <value>Starting a command on remote server failed.</value>
+  </data>
+  <data name="DecodingErrorForErrorRecord" xml:space="preserve">
+    <value>Error in decoding ErrorRecord.</value>
+  </data>
+  <data name="ServerProcessExited" xml:space="preserve">
+    <value>The server process has exited.</value>
+  </data>
+  <data name="IPCServerProcessReportedError" xml:space="preserve">
+    <value>The background process reported an error with the following message: {0}.</value>
+  </data>
+  <data name="CantCastPropertyToExpectedType" xml:space="preserve">
+    <value>Unexpected type of {0} property (expected {1}, got {2}).</value>
+  </data>
+  <data name="IPCInsufficientDataforElement" xml:space="preserve">
+    <value>Not enough data is available to process the {0} element.</value>
+  </data>
+  <data name="CloseCompleted" xml:space="preserve">
+    <value>Close call completed.</value>
+  </data>
+  <data name="CantCastParameterToPSObject" xml:space="preserve">
+    <value>Unexpected type of encoded command parameter (expected PSObject, got {0}).</value>
+  </data>
+  <data name="NestedPipelineNotSupported" xml:space="preserve">
+    <value>Creation of nested pipelines is not supported in remote runspaces.</value>
+  </data>
+  <data name="CSCmdsShellNotPowerShellBased" xml:space="preserve">
+    <value>Session Configuration "{0}" is not a PowerShell based shell.</value>
+  </data>
+  <data name="URIEndPointNotResolved" xml:space="preserve">
+    <value>{0}Redirect location reported: {1}.</value>
+  </data>
+  <data name="ReceivedUnsupportedRemoteHostCall" xml:space="preserve">
+    <value>Received unsupported remote host call: {0}.</value>
+  </data>
+  <data name="NewRunspaceAmbiguosAuthentication" xml:space="preserve">
+    <value>A {0} cannot be specified when {1} is specified.</value>
+  </data>
+  <data name="ClientNegotiationTimeout" xml:space="preserve">
+    <value>Client negotiation timer has expired. The negotiation timeout interval is {0} milliseconds.</value>
+  </data>
+  <data name="ReceivedUnsupportedAction" xml:space="preserve">
+    <value>Received remoting data with unsupported action: {0}.</value>
+  </data>
+  <data name="CSShouldProcessTarget" xml:space="preserve">
+    <value>Name: {0}</value>
+  </data>
+  <data name="NativeWriteFileFailed" xml:space="preserve">
+    <value>Native API call to WriteFile failed. Error code is {0}.</value>
+  </data>
+  <data name="OutOfMemory" xml:space="preserve">
+    <value>Out of process memory.</value>
+  </data>
+  <data name="FilePathShouldPS1Extension" xml:space="preserve">
+    <value>Only PowerShell script files are allowed for FilePath parameter. Specify a file with .ps1 extension.</value>
+  </data>
+  <data name="RemoteRunspaceInfoLimitExceeded" xml:space="preserve">
+    <value>Specified RemoteRunspaceInfo objects have exceeded the maximum allowable limit.</value>
+  </data>
+  <data name="ConnectFailed" xml:space="preserve">
+    <value>Connection attempt failed.</value>
+  </data>
+  <data name="ERemotingCaption" xml:space="preserve">
+    <value>Registering session configuration</value>
+  </data>
+  <data name="UnsupportedWaitHandleType" xml:space="preserve">
+    <value>The wait handle type "{0}" is not supported.</value>
+  </data>
+  <data name="RemoteHostCallFailed" xml:space="preserve">
+    <value>Remote host call to "{0}" failed.</value>
+  </data>
+  <data name="RestartWSManServiceTarget" xml:space="preserve">
+    <value>Name: {0}</value>
+  </data>
+  <data name="ProxyCredentialWithoutAccess" xml:space="preserve">
+    <value>Proxy credentials cannot be specified when using the following proxy access type: {0}. Either specify a different access type, or do not specify proxy credentials.</value>
+  </data>
+  <data name="CustomShellNotFound" xml:space="preserve">
+    <value>No Session Configuration matches criteria "{0}".</value>
+  </data>
+  <data name="GeneralError" xml:space="preserve">
+    <value>Error with error code {0} occurred while calling method {1}.</value>
+  </data>
+  <data name="MissingDataType" xml:space="preserve">
+    <value>Remoting data is missing RemotingDataType property.</value>
+  </data>
+  <data name="RunspaceParamNotSupported" xml:space="preserve">
+    <value>Session parameter can be used only with PSRemotingJob objects</value>
+  </data>
+  <data name="RcsScriptMessageV" xml:space="preserve">
+    <value>Running command "{0}" to remove a Session Configuration.</value>
+  </data>
+  <data name="MustBeAdminToOverrideThreadOptions" xml:space="preserve">
+    <value>Only administrators can override the Thread Options remotely.</value>
+  </data>
+  <data name="ClientSendFailed" xml:space="preserve">
+    <value>Client side send call failed.</value>
+  </data>
+  <data name="IPCSupportsOnlyDefaultAuth" xml:space="preserve">
+    <value>The specified authentication mechanism "{0}" is not supported. Only "{1}" is supported for this operation.</value>
+  </data>
+  <data name="ReceiveExFailed" xml:space="preserve">
+    <value>Receiving data from remote server failed.</value>
+  </data>
+  <data name="InvalidJobStateGeneral" xml:space="preserve">
+    <value>State of current Job instance is not valid for this operation.</value>
+  </data>
+  <data name="IPCSignalTimedOut" xml:space="preserve">
+    <value>The client did not receive a response for signal operation in the specified time interval. This might happen when a command is not responding to a stop message in a timely manner.</value>
+  </data>
+  <data name="RemoteRunspaceNotAvailableForSpecifiedName" xml:space="preserve">
+    <value>Remote Session is not available for {0}.</value>
+  </data>
+  <data name="IPCWrongAttributeCountForDataElement" xml:space="preserve">
+    <value>Expected only two attributes with the names "{0}" and "{1}" in the {2} element.</value>
+  </data>
+  <data name="RestartWSManRequiredShowUI" xml:space="preserve">
+    <value>WinRM service must be restarted before a UI can be displayed for SecurityDescriptor selection. Restart WinRM service and run the command: "{0}"</value>
+  </data>
+  <data name="ObjectIsTooBig" xml:space="preserve">
+    <value>Remoting data is too large to be reassembled from the fragments. This may happen if length of the data in a fragment is greater than Int32.Max or the data might have been tampered with.</value>
+  </data>
+  <data name="NonExistentInitialSessionStateProvider" xml:space="preserve">
+    <value>EndpointConfiguration with Id {0} does not exist on the remote server. Contact your administrator.</value>
+  </data>
+  <data name="CSShouldProcessTargetAdminEnable" xml:space="preserve">
+    <value>Name: {0}. This will allow administrators to remotely run Windows PowerShell commands on this computer</value>
+  </data>
+  <data name="RemoteHostDataEncodingNotSupported" xml:space="preserve">
+    <value>Remote host method data encoding is not supported for type {0}.</value>
+  </data>
+  <data name="MissingRunspaceId" xml:space="preserve">
+    <value>Remoting data is missing Session InstanceId property.</value>
+  </data>
+  <data name="IPCNoSignalForSession" xml:space="preserve">
+    <value>A {0} message to a session is not supported. A {0} message must be sent only to a command.</value>
+  </data>
+  <data name="MissingIsStartFragment" xml:space="preserve">
+    <value>First fragment's IsStartFragment flag is not set.</value>
+  </data>
+  <data name="JobWithSpecifiedNameNotFound" xml:space="preserve">
+    <value>The command cannot find the job because the {0} name was not found. Verify the value of the Name parameter, and then try the command again.</value>
+  </data>
+  <data name="CommandSendExFailed" xml:space="preserve">
+    <value>Sending data to a remote command failed.</value>
+  </data>
+  <data name="EcsScriptMessageV" xml:space="preserve">
+    <value>Running command "{0}" to enable Session Configuration.</value>
+  </data>
+  <data name="ScsShouldProcessTargetSDDL" xml:space="preserve">
+    <value>Name: {0} SDDL: {1}</value>
+  </data>
+  <data name="NoMoreInputWrites" xml:space="preserve">
+    <value>Cannot write input as there are no more running pipelines</value>
+  </data>
+  <data name="RunspaceIdsDoNotMatch" xml:space="preserve">
+    <value>Received client Session InstanceId "{0}" does not matching my Session's InstanceId "{1}".</value>
+  </data>
+  <data name="DecodingErrorForMaxRunspaces" xml:space="preserve">
+    <value>Error in decoding Maximum runspaces.</value>
+  </data>
+  <data name="ConnectExFailed" xml:space="preserve">
+    <value>Connecting to remote server failed.</value>
+  </data>
+  <data name="WsmanMaxRedirectionCountVariableDescription" xml:space="preserve">
+    <value>The maximum number of WSMan uri redirections to allow while connecting to a remote machine.</value>
+  </data>
+  <data name="NcsScriptMessageV" xml:space="preserve">
+    <value>Running command "{0}" to create a new Session Configuration.</value>
+  </data>
+  <data name="RemoteRunspaceHasMultipleMatchesForSpecifiedRunspaceId" xml:space="preserve">
+    <value>Multiple matches found for Session ID {0}.</value>
+  </data>
+  <data name="PSSessionAppName" xml:space="preserve">
+    <value>AppName where the remote connection will be established</value>
+  </data>
+  <data name="StopPSJobWhatIfTarget" xml:space="preserve">
+    <value>Remote Command: {0}, associated with job whose session identifier is '{1}'.</value>
+  </data>
+  <data name="MissingDestination" xml:space="preserve">
+    <value>Remoting data is missing destination property.</value>
+  </data>
+  <data name="CSShouldProcessAction" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="MissingCallId" xml:space="preserve">
+    <value>Remoting data is missing CallId property.</value>
+  </data>
+  <data name="ServerKeyExchangeFailed" xml:space="preserve">
+    <value>The client did not respond with a public key within the specified timeout period</value>
+  </data>
+  <data name="ReceivedObjectSizeExceededMaximumClient" xml:space="preserve">
+    <value>The current deserialized object size of the data received from remote server exceeded allowed maximum object size. The current deserialized object size is {0}. Allowed maximum object size is {1}.</value>
+  </data>
+  <data name="RemoteHostDataDecodingNotSupported" xml:space="preserve">
+    <value>Remote host method data decoding is not supported for type {0}.</value>
+  </data>
+  <data name="EcsShouldProcessTarget" xml:space="preserve">
+    <value>Name: {0} SDDL: {1}. This will allow selected users to remotely run Windows PowerShell commands on this computer</value>
+  </data>
+  <data name="RemoteRunspaceDoesNotSupportPushRunspace" xml:space="preserve">
+    <value>Enter-PSSession failed because the remote Session does not provide commands that it needs.</value>
+  </data>
+  <data name="TroubleShootingHelpTopic" xml:space="preserve">
+    <value>{0} For more information, see the about_Remote_Troubleshooting Help topic.</value>
+  </data>
+  <data name="ServerNegotiationFailed" xml:space="preserve">
+    <value>PowerShell server does not support the {0} {1} negotiated by the client. Make sure the client is compatible with the build {2} and the protocol version {3} of PowerShell.</value>
+  </data>
+  <data name="RemoteRunspaceNotAvailableForSpecifiedComputer" xml:space="preserve">
+    <value>Remote Session is not available for {0}.</value>
+  </data>
+  <data name="NcsCannotDeleteFile" xml:space="preserve">
+    <value>Cannot delete temporary file {0}. Try again. Reason for failure: {1}.</value>
+  </data>
+  <data name="CantCastRemotingDataToPSObject" xml:space="preserve">
+    <value>Unexpected type of remoting data (expected PSObject, got {0}).</value>
+  </data>
+  <data name="ServerNegotiationTimeout" xml:space="preserve">
+    <value>Server negotiation timer has expired. The negotiation timeout interval is {0} milliseconds.</value>
+  </data>
+  <data name="InvalidComputerName" xml:space="preserve">
+    <value>One or more computer names is not valid. If you are trying to pass a Uri, use the -ConnectionUri parameter or pass Uri objects instead of strings.</value>
+  </data>
+  <data name="UnableToLoadType" xml:space="preserve">
+    <value>Unable to load type "{0}" specified in "{1}" section.</value>
+  </data>
+  <data name="RemoteRunspaceOpenFailed" xml:space="preserve">
+    <value>Remote Session open failed.</value>
+  </data>
+  <data name="CommandReceiveExFailed" xml:space="preserve">
+    <value>Receiving data for a remote command failed.</value>
+  </data>
+  <data name="NcsShouldProcessTargetSDDL" xml:space="preserve">
+    <value>Name: {0} SDDL: {1}. This will allow selected users to remotely run Windows PowerShell commands on this computer</value>
+  </data>
+  <data name="PSDefaultSessionOptionDescription" xml:space="preserve">
+    <value>Default session options for new remote sessions.</value>
+  </data>
+  <data name="RedirectedURINotWellFormatted" xml:space="preserve">
+    <value>The destination "{0}" requested the connection to be redirected to "{1}". However "{1}" is not a well formatted URI.</value>
+  </data>
+  <data name="CannotGetStdOutHandle" xml:space="preserve">
+    <value>The call to Windows API GetStdHandle to get Standard Output handle resulted with error code: {0}.</value>
+  </data>
+  <data name="RemoteHostGetBufferContents" xml:space="preserve">
+    <value>A script or application on the {0} remote computer is attempting to read the buffer contents on the PowerShell host. This is not allowed and the call has been suppressed.</value>
+  </data>
+  <data name="CommandReceiveExCallBackError" xml:space="preserve">
+    <value>Processing data for a remote command failed with the following error message: {0}</value>
+  </data>
+  <data name="JobWithSpecifiedInstanceIdNotCompleted" xml:space="preserve">
+    <value>The command cannot remove the job with the {0} session identifier and the {1} instance identifier because the job is not finished. To remove the job, first stop the job or use the Force parameter.</value>
+  </data>
+  <data name="PortIsOutOfRange" xml:space="preserve">
+    <value>Port number {0} is out or range. Valid range is between 1 and 65535.</value>
+  </data>
+  <data name="RemoteHostPromptSecureStringPrompt" xml:space="preserve">
+    <value>A script or application on the {0} remote computer is sending a Prompt request. When prompted, enter sensitive information like your credentials or password only if you trust the remote computer and the application or script requesting it.</value>
+  </data>
+  <data name="RemoteRunspaceNotAvailableForSpecifiedSessionId" xml:space="preserve">
+    <value>Remote Session is not available for {0}.</value>
+  </data>
+  <data name="FatalErrorCausingClose" xml:space="preserve">
+    <value>An error has occurred which PowerShell is unable to handle. Remote session may have terminated.</value>
+  </data>
+  <data name="RemoteRunspaceInfoHasDuplicates" xml:space="preserve">
+    <value>Specified RemoteRunspaceInfo objects have duplicates.</value>
+  </data>
+  <data name="ComputerNameParamNotSupported" xml:space="preserve">
+    <value>The command cannot retrieve the jobs of the specified computers. The ComputerName parameter can be used only with jobs creating using PowerShell remoting.</value>
+  </data>
+  <data name="EcsWSManShouldProcessDesc" xml:space="preserve">
+    <value>Performing operation "{0}".</value>
+  </data>
+  <data name="ReceivedUnsupportedDataType" xml:space="preserve">
+    <value>Received remoting data with unsupported data type: {0}.</value>
+  </data>
+  <data name="ForceClosed" xml:space="preserve">
+    <value>Force closed.</value>
+  </data>
+  <data name="RemoteRunspaceNotAvailableForSpecifiedRunspaceId" xml:space="preserve">
+    <value>Remote Session is not available for {0}.</value>
+  </data>
+  <data name="DcsScriptMessageV" xml:space="preserve">
+    <value>Running command "{0}" to disable Session Configuration.</value>
+  </data>
+  <data name="RemoteHostReadLineAsSecureStringPrompt" xml:space="preserve">
+    <value>A script or application on the {0} remote computer is requesting to read a line securely. Enter sensitive information like your credentials only if you trust the remote computer and the application or script requesting it.</value>
+  </data>
+  <data name="PipelineNotFoundOnServer" xml:space="preserve">
+    <value>Pipeline Id "{0}" was not found on the server;</value>
+  </data>
+  <data name="RemoteHostMethodNotImplemented" xml:space="preserve">
+    <value>Remote host method {0} is not implemented.</value>
+  </data>
+  <data name="UnableToLoadAssembly" xml:space="preserve">
+    <value>Unable to load assembly "{0}" specified in "{1}" section.</value>
+  </data>
+  <data name="ClientKeyExchangeFailed" xml:space="preserve">
+    <value>The server did not respond with an encrypted session key within the specified timeout period</value>
+  </data>
+  <data name="SendExCallBackError" xml:space="preserve">
+    <value>Sending data to remote server failed with the following error message : {0}</value>
+  </data>
+  <data name="ReceiveExCallBackError" xml:space="preserve">
+    <value>Processing data from remote server failed with the following error message: {0}</value>
+  </data>
+  <data name="ReceivedObjectSizeExceededMaximumServer" xml:space="preserve">
+    <value>The current deserialized object size of the data received from remote client exceeded allowed maximum object size. The current deserialized object size is {0}. Allowed maximum object size is {1}.</value>
+  </data>
+  <data name="ERemotingQuery" xml:space="preserve">
+    <value>Session configuration "{0}" is not found. Running command "{1}" to create "{0}" session configuration. This will restart WinRM service.</value>
+  </data>
+  <data name="IPCServerProcessExited" xml:space="preserve">
+    <value>The background process exited abnormally.</value>
+  </data>
+  <data name="DecodingErrorForMinRunspaces" xml:space="preserve">
+    <value>Error in decoding Minimum runspaces.</value>
+  </data>
+  <data name="HostInNestedPrompt" xml:space="preserve">
+    <value>Cannot run Enter-PSSession from a nested prompt</value>
+  </data>
+  <data name="CSCmdsTypeNeedsAssembly" xml:space="preserve">
+    <value>Either both "{0}" and "{1}" must be specified or both must not be specified.</value>
+  </data>
+  <data name="RemoteRunspaceClosed" xml:space="preserve">
+    <value>Remote Session closed for Uri {0}.</value>
+  </data>
+  <data name="CSCDoubleParameterOutOfRange" xml:space="preserve">
+    <value>{0} is not valid value for parameter {1}. Value must be greater than or equal to 0.</value>
+  </data>
+  <data name="CSCmdsShellNotFound" xml:space="preserve">
+    <value>Session Configuration "{0}" not found.</value>
+  </data>
+  <data name="MissingIsEndFragment" xml:space="preserve">
+    <value>Last fragment's IsEndFragment flag is not set. This may happen if the fragments are not properly constructed by the remote machine or the data might have been tampered with.</value>
+  </data>
+  <data name="CommandHandleIsNull" xml:space="preserve">
+    <value>The command handle returned from the WinRS API WSManRunShellCommand is null.</value>
+  </data>
+  <data name="MissingTarget" xml:space="preserve">
+    <value>Remoting data is missing target interface property.</value>
+  </data>
+  <data name="CloseExCallBackError" xml:space="preserve">
+    <value>Closing remote server shell instance failed with the following error message : {0}</value>
+  </data>
+  <data name="DcsWarningMessage" xml:space="preserve">
+    <value>Disabling the session configurations does not undo all the changes made by the Enable-PSRemoting or Enable-PSSessionConfiguration cmdlet. You might have to manually undo the changes by following these steps.
+    1. Stop and disable the WinRM service.
+    2. Delete the listener that accepts requests on any IP address.
+    3. Disable the firewall exceptions for WS-Management communications.
+    4. Restore the value of the LocalAccountTokenFilterPolicy to 0, which restricts remote access to members of the Administrators group on the computer.</value>
+  </data>
+  <data name="RemoteRunspaceOpenUnknownState" xml:space="preserve">
+    <value>Opening remote Session failed with unexpected state. State {0}.</value>
+  </data>
+  <data name="MandatoryValueNotInCorrectFormat" xml:space="preserve">
+    <value>Mandatory value {0} is not in correct format for registry key {1}.  Expected format is string.</value>
+  </data>
+  <data name="HostDoesNotSupportPushRunspace" xml:space="preserve">
+    <value>The host does not support Enter-PSSession and Exit-PSSession.</value>
+  </data>
+  <data name="DecodingErrorForPowerShellStateInfo" xml:space="preserve">
+    <value>Error in decoding PowerShellStateInfo.</value>
+  </data>
+  <data name="ScsScriptMessageV" xml:space="preserve">
+    <value>Running command "{0}" to update Session Configuration properties.</value>
+  </data>
+  <data name="NcsCannotWritePluginContent" xml:space="preserve">
+    <value>Cannot write shell configuration data into temporary file {0}. Try again. Reason for failure: {1}.</value>
+  </data>
+  <data name="UriSpecifiedNotValid" xml:space="preserve">
+    <value>Specified Uri {0} is not valid.</value>
+  </data>
+  <data name="PushedRunspaceMustBeOpen" xml:space="preserve">
+    <value>Session must be open.</value>
+  </data>
+  <data name="IPCExceptionLaunchingProcess" xml:space="preserve">
+    <value>There is an error launching the background process. Error reported: {0}.</value>
+  </data>
+  <data name="ObjectIdsNotMatching" xml:space="preserve">
+    <value>Unexpected ObjectId received. This may happen if the fragments are not properly constructed by the remote machine or the data might have been tampered with.</value>
+  </data>
+  <data name="IPCErrorProcessingServerData" xml:space="preserve">
+    <value>There is an error processing data from the background process. Error reported: {0}.</value>
+  </data>
+  <data name="RemoteHostPromptForCredentialModifiedMessage" xml:space="preserve">
+    <value>Warning: This credential is being requested by a script or application on the {0} remote computer. Enter your credentials only if you trust the remote computer and the application or script requesting it.
+
+{1}</value>
+  </data>
+  <data name="RunShellCommandExCallBackError" xml:space="preserve">
+    <value>Starting a command on remote server failed with the following error message : {0}</value>
+  </data>
+  <data name="UnknownTargetClass" xml:space="preserve">
+    <value>Remote host method was invoked on an unknown target class: {0}</value>
+  </data>
+  <data name="CannotGetStdInHandle" xml:space="preserve">
+    <value>The call to Windows API GetStdHandle to get Standard Input handle resulted with error code: {0}.</value>
+  </data>
+  <data name="CloseIsCalled" xml:space="preserve">
+    <value>Close is called.</value>
+  </data>
+  <data name="DeserializedObjectIsNull" xml:space="preserve">
+    <value>Deserialized remoting data is null.</value>
+  </data>
+  <data name="RelativeUriForRunspacePathNotSupported" xml:space="preserve">
+    <value>Relative Uris are not supported in the creation of remote Sessions.</value>
+  </data>
+  <data name="DefaultRemotingExceptionMessage" xml:space="preserve">
+    <value>An error of type "{0}" has occurred.</value>
+  </data>
+  <data name="JobWithSpecifiedSessionIdNotCompleted" xml:space="preserve">
+    <value>The command cannot remove the job with the {0} session identifier because the job is not finished. To remove the job, first stop the job, or use the Force parameter.</value>
+  </data>
+  <data name="ReceivedUnsupportedRemotingTargetInterfaceType" xml:space="preserve">
+    <value>Received unsupported RemotingTargetInterface type: {0}</value>
+  </data>
+  <data name="IPCWrongAttributeCountForElement" xml:space="preserve">
+    <value>Expected only one attribute with the name "{0}" in the {1} element.</value>
+  </data>
+  <data name="ReceivedDataStreamIsNotStdout" xml:space="preserve">
+    <value>"Received data has stream id index "{0}". Only Standard Output stream id index "0" is supported.</value>
+  </data>
+  <data name="WrongSessionOptionValue" xml:space="preserve">
+    <value>A {0} value must be specified for session option {1}.</value>
+  </data>
+  <data name="GcsScriptMessageV" xml:space="preserve">
+    <value>Running command "{0}" to get PowerShell based Session Configurations.</value>
+  </data>
+  <data name="CannotGetStdErrHandle" xml:space="preserve">
+    <value>The call to Windows API GetStdHandle to get Standard Error handle resulted with error code: {0}.</value>
+  </data>
+  <data name="URIRedirectWarningToHost" xml:space="preserve">
+    <value>Your connection has been redirected to the following URI: "{0}"</value>
+  </data>
+  <data name="PSSessionConfigurationName" xml:space="preserve">
+    <value>Name of the session configuration which will be loaded on the remote computer</value>
+  </data>
+  <data name="RemoteRunspaceHasMultipleMatchesForSpecifiedSessionId" xml:space="preserve">
+    <value>Multiple matches found for session ID {0}.</value>
+  </data>
+  <data name="IPCOnlyTextExpectedInDataElement" xml:space="preserve">
+    <value>Node type "{0}" is unknown in the {1} element. Only the "{2}" node type is expected in the {1} element.</value>
+  </data>
+  <data name="URIRedirectionReported" xml:space="preserve">
+    <value>{0} To automatically connect to the redirected URI, verify "{1}" property of session preference variable "{2}" and use "{3}" parameter on the cmdlet.</value>
+  </data>
+  <data name="ShowUIAndSDDLCannotExist" xml:space="preserve">
+    <value>"{0}" and "{1}" parameters cannot be specified together. Specify either "{0}" or  "{1}" parameter.</value>
+  </data>
+  <data name="StdInCannotBeSetToNoWait" xml:space="preserve">
+    <value>Standard Input handle cannot be set to no wait state. System error code is {0}.</value>
+  </data>
+  <data name="ServerNotFoundCapabilityProperties" xml:space="preserve">
+    <value>{0}. Negotiation with the client failed. Make sure the client is compatible with the build {1} and the protocol version {2} of PowerShell.</value>
+  </data>
+  <data name="CannotRemoveJob" xml:space="preserve">
+    <value>The command cannot remove the job because it does not exist or because it is a child job. Child jobs can be removed only by removing the parent job.</value>
+  </data>
+  <data name="InitialSessionStateNull" xml:space="preserve">
+    <value>The EndpointConfiguration with the {0} identifier does not give a valid initial session state on the remote computer. Contact your administrator.</value>
+  </data>
+  <data name="DcsShouldProcessTarget" xml:space="preserve">
+    <value>Name: {0} SDDL: {1}. This will disable access to this session configuration for everyone</value>
+  </data>
+  <data name="IPCUnknownElementReceived" xml:space="preserve">
+    <value>Unknown element "{0}" was received. This might happen if the remote process exited abnormally.</value>
+  </data>
+  <data name="ClientReceiveFailed" xml:space="preserve">
+    <value>Client side receive call failed.</value>
+  </data>
+  <data name="MandatoryValueNotPresent" xml:space="preserve">
+    <value>The mandatory value {0} is not specified for the {1} registry key.</value>
+  </data>
+  <data name="RunspaceCannotBeFound" xml:space="preserve">
+    <value>Requested remote Session with client InstanceId "{0}" cannot be found.</value>
+  </data>
+  <data name="TypeNeedsAssembly" xml:space="preserve">
+    <value>Both "{0}" and "{1}" must be specified in the "{2}" section.</value>
+  </data>
+  <data name="IPCUnknownCommandGuid" xml:space="preserve">
+    <value>Data for the non active command with the identifier {0} was received. Received data: {1}.</value>
+  </data>
+  <data name="ConnectExCallBackError" xml:space="preserve">
+    <value>Connecting to remote server failed with the following error message : {0}</value>
+  </data>
+  <data name="MissingMethodName" xml:space="preserve">
+    <value>Remoting data is missing MethodName property.</value>
+  </data>
+  <data name="StartupScriptThrewTerminatingError" xml:space="preserve">
+    <value>Running startup script threw an error: {0}.</value>
+  </data>
+  <data name="PSSenderInfoDescription" xml:space="preserve">
+    <value>Contains information about the remote user starting the remote session. This variable is available only from a remote session.</value>
+  </data>
+  <data name="ClientRequestedToCloseSession" xml:space="preserve">
+    <value>Client has requested to close the session.</value>
+  </data>
+  <data name="CloseFailed" xml:space="preserve">
+    <value>The close call failed.</value>
+  </data>
+  <data name="RemoteHostDecodingFailed" xml:space="preserve">
+    <value>Failure in decoding data from the remote host. There was an error in the network data.</value>
+  </data>
+  <data name="ReceivedDataSizeExceededMaximumClient" xml:space="preserve">
+    <value>The total data received from the remote server exceeded allowed maximum. Allowed maximum is {0}.</value>
+  </data>
+  <data name="FilePathNotFromFileSystemProvider" xml:space="preserve">
+    <value>Path specified for FilePath parameter is not from FileSystem provider.</value>
+  </data>
+  <data name="ItemNotFoundInRepository" xml:space="preserve">
+    <value>{0} does not contain item with id {1}.</value>
+  </data>
+  <data name="CantCastCommandToPSObject" xml:space="preserve">
+    <value>Unexpected type of encoded command (expected PSObject, got {0}).</value>
+  </data>
+  <data name="AssemblyLoadAttributesNotFound" xml:space="preserve">
+    <value>"{0}", "{1}" must be specified in "{2}" section to dynamically load assembly.</value>
+  </data>
+  <data name="RemotingDestinationNotForMe" xml:space="preserve">
+    <value>Received packet not destined for me: myself = {0}, packet destination = {1}.</value>
+  </data>
+  <data name="RemoteHostPromptForCredentialModifiedCaption" xml:space="preserve">
+    <value>Windows PowerShell Credential Request : {0}</value>
+  </data>
+  <data name="SendExFailed" xml:space="preserve">
+    <value>Sending data to remote server failed.</value>
+  </data>
+  <data name="StdInIsNotOpen" xml:space="preserve">
+    <value>Standard Input handle is not open.</value>
+  </data>
+  <data name="ResponsePromptIdCannotBeFound" xml:space="preserve">
+    <value>Prompt response has a prompt id "{0}" that cannot be found.</value>
+  </data>
+  <data name="DecodingErrorForPipelineStateInfo" xml:space="preserve">
+    <value>Error in decoding PipelineStateInfo.</value>
+  </data>
+  <data name="MissingTargetClass" xml:space="preserve">
+    <value>Remote host method was invoked without specifying a target class.</value>
+  </data>
+  <data name="IPCWowComponentNotPresent" xml:space="preserve">
+    <value>The "{0}" executable is not present. Make sure that WOW64 components are installed.</value>
+  </data>
+  <data name="RestartWSManServiceMessageV" xml:space="preserve">
+    <value>Restarting WinRM service"</value>
+  </data>
+</root>

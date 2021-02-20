@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <PublishUrlHistory>ftp://ccisupportsite.com/apps/installer/</PublishUrlHistory>
+    <InstallUrlHistory>http://ccisupportsite.com/apps/Installer/</InstallUrlHistory>
+    <SupportUrlHistory>
+    </SupportUrlHistory>
+    <UpdateUrlHistory>
+    </UpdateUrlHistory>
+    <BootstrapperUrlHistory>
+    </BootstrapperUrlHistory>
+    <ErrorReportUrlHistory>
+    </ErrorReportUrlHistory>
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <StartArguments>https://spreporting.app-garden.com  3D6F425D7369C19B85257EE300625F7B  "mmoen@cookconsult ing.net" c:\as400daxx\</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartArguments>https://spreporting.app-garden.com  C4F394FE6F17E26485257E450071ADF3 testing c:\AgReportMain</StartArguments>
+  </PropertyGroup>
+</Project>

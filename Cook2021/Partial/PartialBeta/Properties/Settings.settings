@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Partial.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="PartialBeta_wslogger_Ws_Logger" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://spreporting.app-garden.com/apps/wslogger/ws_logger.asmx</Value>
+    </Setting>
+    <Setting Name="PartialBeta_WSCustomer_GetCustomersPartialService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://spinstalls.app-garden.com:80/cciweb.nsf/GetPartialCustomers?OpenWebService</Value>
+    </Setting>
+    <Setting Name="PartialBeta_WSPartials_RemovePartialFlagsService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://spinstalls.app-garden.com:80/cciweb.nsf/RemovePartialFlags?OpenWebService</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

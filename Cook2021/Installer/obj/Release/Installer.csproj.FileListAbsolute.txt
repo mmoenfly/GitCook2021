@@ -1,0 +1,44 @@
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\bin\Release\Installer.exe.config
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\bin\Release\Installer.exe
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\bin\Release\Installer.XmlSerializers.dll
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\bin\Release\Installer.pdb
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\bin\Release\Microsoft.Office.Interop.Excel.dll
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\bin\Release\office.dll
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\bin\Release\Microsoft.Vbe.Interop.dll
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\bin\Release\Microsoft.Office.Interop.Excel.xml
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\bin\Release\office.xml
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\obj\Release\ResolveAssemblyReference.cache
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\obj\Release\Installer.exe
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\obj\Release\Installer.pdb
+C:\Users\mjm.MJM\Documents\Visual Studio 2008\Project5\CookSpreadSheet\Installer-branch-beta\obj\Release\Installer.XmlSerializers.dll
+E:\git\Cook\Project5\CookSpreadSheet\Installer-branch-beta\bin\Release\Installer.exe.config
+E:\git\Cook\Project5\CookSpreadSheet\Installer-branch-beta\obj\Release\Installer.exe
+E:\git\Cook\Project5\CookSpreadSheet\Installer-branch-beta\obj\Release\Installer.pdb
+E:\git\Cook\Project5\CookSpreadSheet\Installer-branch-beta\obj\Release\Installer.XmlSerializers.dll
+E:\git\Cook\Project5\CookSpreadSheet\Installer-branch-beta\bin\Release\Installer.exe
+E:\git\Cook\Project5\CookSpreadSheet\Installer-branch-beta\bin\Release\Installer.XmlSerializers.dll
+E:\git\Cook\Project5\CookSpreadSheet\Installer-branch-beta\bin\Release\Installer.pdb
+E:\git\Cook\Project5\CookSpreadSheet\Installer-branch-beta\bin\Release\Microsoft.Office.Interop.Excel.dll
+E:\git\Cook\Project5\CookSpreadSheet\Installer-branch-beta\bin\Release\office.dll
+E:\git\Cook\Project5\CookSpreadSheet\Installer-branch-beta\bin\Release\Microsoft.Vbe.Interop.dll
+E:\git\Cook\Project5\CookSpreadSheet\Installer-branch-beta\bin\Release\Microsoft.Office.Interop.Excel.xml
+E:\git\Cook\Project5\CookSpreadSheet\Installer-branch-beta\bin\Release\office.xml
+E:\git\Installer\bin\Release\Installer.exe.config
+E:\git\Installer\bin\Release\Installer.exe
+E:\git\Installer\bin\Release\Installer.XmlSerializers.dll
+E:\git\Installer\bin\Release\Installer.pdb
+E:\git\Installer\bin\Release\microsoft.msxml.dll
+E:\git\Installer\bin\Release\Microsoft.Office.Interop.Excel.dll
+E:\git\Installer\bin\Release\Newtonsoft.Json.dll
+E:\git\Installer\bin\Release\office.dll
+E:\git\Installer\bin\Release\Microsoft.Vbe.Interop.dll
+E:\git\Installer\bin\Release\stdole.dll
+E:\git\Installer\bin\Release\Microsoft.Office.Interop.Excel.xml
+E:\git\Installer\bin\Release\Newtonsoft.Json.xml
+E:\git\Installer\bin\Release\office.xml
+E:\git\Installer\obj\Release\Installer.csprojAssemblyReference.cache
+E:\git\Installer\obj\Release\Installer.csproj.CoreCompileInputs.cache
+E:\git\Installer\obj\Release\Installer.csproj.CopyComplete
+E:\git\Installer\obj\Release\Installer.exe
+E:\git\Installer\obj\Release\Installer.pdb
+E:\git\Installer\obj\Release\Installer.XmlSerializers.dll

@@ -1,0 +1,36 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: System.Management.Automation.QuestionMarkVariable
+// Assembly: System.Management.Automation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+// MVID: A866DF73-FE6E-416D-AD3E-EC8D3078BB68
+// Assembly location: C:\windows\assembly\GAC_MSIL\System.Management.Automation\1.0.0.0__31bf3856ad364e35\System.Management.Automation.dll
+
+namespace System.Management.Automation
+{
+  internal class QuestionMarkVariable : PSVariable
+  {
+    private ExecutionContext _context;
+    [TraceSource("SessionState", "Traces access to variables in session state.")]
+    private static PSTraceSource tracer = PSTraceSource.GetTracer("SessionState", "Traces access to variables in session state.");
+
+    internal QuestionMarkVariable(ExecutionContext context)
+      : base("?", (object) true, ScopedItemOptions.ReadOnly | ScopedItemOptions.AllScope, ResourceManagerCache.GetResourceString("RunspaceInit", "DollarHookDescription"))
+    {
+      using (QuestionMarkVariable.tracer.TraceConstructor((object) this))
+        this._context = context;
+    }
+
+    public override object Value
+    {
+      get
+      {
+        using (QuestionMarkVariable.tracer.TraceProperty())
+          return (object) this._context.QuestionMarkVariableValue;
+      }
+      set
+      {
+        using (QuestionMarkVariable.tracer.TraceProperty(value))
+          base.Value = value;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+﻿body {font-size:larger ; text-align:center 
+}
+
+#cnt1 {
+    text-align: center;
+    position: absolute;
+    left: 300px;
+    top: 50px;
+}
+
+
+#msg {
+    font-size: medium;
+    text-align: left;
+    color: darkslateblue;
+    position:relative;
+    left: 120px;
+    top: 100px;
+}
+#instl {
+    font-size: larger;
+   
+    color: black;
+    font-size: larger; 
+    font-weight: 700;
+   
+}
+#help {
+    font-size: larger;
+    position:relative;
+    top:100px;
+    left:-300px;
+    color: black;
+    font-size: larger;
+    font-weight: 700;
+}

@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "APGReportingFull", "ApgReporting.vdproj", "{ACB24C90-BDC3-4DA3-94F1-7FD1932A7E64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Installer", "..\..\Installer\Installer.csproj", "{39FAD401-BE8C-448E-B158-4BA08D2BC19A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Default = Debug|Default
+		Release|Any CPU = Release|Any CPU
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACB24C90-BDC3-4DA3-94F1-7FD1932A7E64}.Debug|Any CPU.ActiveCfg = Debug
+		{ACB24C90-BDC3-4DA3-94F1-7FD1932A7E64}.Debug|Any CPU.Build.0 = Debug
+		{ACB24C90-BDC3-4DA3-94F1-7FD1932A7E64}.Debug|Default.ActiveCfg = Debug
+		{ACB24C90-BDC3-4DA3-94F1-7FD1932A7E64}.Debug|Default.Build.0 = Debug
+		{ACB24C90-BDC3-4DA3-94F1-7FD1932A7E64}.Release|Any CPU.ActiveCfg = Release
+		{ACB24C90-BDC3-4DA3-94F1-7FD1932A7E64}.Release|Any CPU.Build.0 = Release
+		{ACB24C90-BDC3-4DA3-94F1-7FD1932A7E64}.Release|Default.ActiveCfg = Release
+		{ACB24C90-BDC3-4DA3-94F1-7FD1932A7E64}.Release|Default.Build.0 = Release
+		{39FAD401-BE8C-448E-B158-4BA08D2BC19A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39FAD401-BE8C-448E-B158-4BA08D2BC19A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39FAD401-BE8C-448E-B158-4BA08D2BC19A}.Debug|Default.ActiveCfg = Debug|Any CPU
+		{39FAD401-BE8C-448E-B158-4BA08D2BC19A}.Debug|Default.Build.0 = Debug|Any CPU
+		{39FAD401-BE8C-448E-B158-4BA08D2BC19A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39FAD401-BE8C-448E-B158-4BA08D2BC19A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39FAD401-BE8C-448E-B158-4BA08D2BC19A}.Release|Default.ActiveCfg = Release|Any CPU
+		{39FAD401-BE8C-448E-B158-4BA08D2BC19A}.Release|Default.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0CE93C3-8A6A-4089-A206-D6BBD3EC0907}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Default = Debug|Default
+		Release|Any CPU = Release|Any CPU
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Default = Debug|Default
+		Release|Any CPU = Release|Any CPU
+		Release|Default = Release|Default
+	EndGlobalSection
+EndGlobal

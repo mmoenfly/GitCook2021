@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Installer.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Installer_wslogger_WS_Logger" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://spreporting.app-garden.com/apps/wslogger/ws_logger.asmx</Value>
+    </Setting>
+    <Setting Name="Installer_net_cookconsulting_cci_GetFullCustomersService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://cci.cookconsulting.net:80/cciweb.nsf/getfullcustomers?OpenWebService</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

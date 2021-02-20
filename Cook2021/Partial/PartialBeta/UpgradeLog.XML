@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="PartialBeta">
+</Property><Property Name="Solution File" Value="E:\git\Partial\PartialBeta\PartialBeta.sln">
+</Property><Property Name="Date" Value="Wednesday, 20 January, 2021">
+</Property><Property Name="Time" Value="06:54">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="PartialBeta.sln" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\PartialBeta.sln">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="PartialBeta.csproj" Description="Project file successfully backed up as E:\git\Partial\PartialBeta\Backup\PartialBeta.csproj">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="DownloadInstall.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\DownloadInstall.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="DocDetails.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\DocDetails.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="Products.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\Products.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="PcId.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\PcId.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="WSCustomer\GetCustomersPartialService.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\WSCustomer\GetCustomersPartialService.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="WSCustomer\GETCUSTOMERSPARTIALCompletedEventHandler.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\WSCustomer\GETCUSTOMERSPARTIALCompletedEventHandler.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="WSCustomer\GETCUSTOMERSPARTIALCompletedEventArgs.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\WSCustomer\GETCUSTOMERSPARTIALCompletedEventArgs.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="wslogger\Ws_Logger.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\wslogger\Ws_Logger.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="wslogger\MyTest.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\wslogger\MyTest.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="wslogger\LoggerCompletedEventHandler.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\wslogger\LoggerCompletedEventHandler.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="wslogger\LoggerCompletedEventArgs.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\wslogger\LoggerCompletedEventArgs.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="wslogger\ChkInstallCompletedEventHandler.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\wslogger\ChkInstallCompletedEventHandler.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="wslogger\ChkInstallCompletedEventArgs.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\wslogger\ChkInstallCompletedEventArgs.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="wslogger\UpdInstallCompletedEventHandler.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\wslogger\UpdInstallCompletedEventHandler.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="wslogger\FindNextIdCompletedEventHandler.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\wslogger\FindNextIdCompletedEventHandler.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="wslogger\FindNextIdCompletedEventArgs.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\wslogger\FindNextIdCompletedEventArgs.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="wslogger\TestdCompletedEventHandler.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\wslogger\TestdCompletedEventHandler.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="wslogger\TestdCompletedEventArgs.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\wslogger\TestdCompletedEventArgs.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="wslogger\RndCustXmlCompletedEventHandler.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\wslogger\RndCustXmlCompletedEventHandler.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="wslogger\RndCustXmlCompletedEventArgs.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\wslogger\RndCustXmlCompletedEventArgs.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="WSPartials\RemovePartialFlagsService.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\WSPartials\RemovePartialFlagsService.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="WSPartials\REMOVEPARTIALFLAGSCompletedEventHandler.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\WSPartials\REMOVEPARTIALFLAGSCompletedEventHandler.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="WSPartials\REMOVEPARTIALFLAGSCompletedEventArgs.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\WSPartials\REMOVEPARTIALFLAGSCompletedEventArgs.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="Properties\Settings.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\Properties\Settings.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="AssemblyInfo.cs" Description="File successfully backed up as E:\git\Partial\PartialBeta\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="PartialBeta.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="PartialBeta" Source="PartialBeta.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="PartialBeta.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="PartialBeta.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="PartialBeta" Source="PartialBeta.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
