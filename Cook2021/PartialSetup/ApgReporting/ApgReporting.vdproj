@@ -198,20 +198,6 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_46A2351E1F3F4DEE8FA4AF94264E3929"
-            {
-            "Name" = "8:KillOldXL"
-            "Condition" = "8:"
-            "Object" = "8:_19456B039787404BA82D2E9315781AC3"
-            "FileType" = "3:4"
-            "InstallAction" = "3:1"
-            "Arguments" = "8:"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_1C38415D_7980_446D_8DEF_91C04FC3257D"
-            "InstallerClass" = "11:FALSE"
-            "CustomActionData" = "8:"
-            }
             "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_4D882FF889074A0399036B6E650A6C07"
             {
             "Name" = "8:Partial"
@@ -221,7 +207,7 @@
             "InstallAction" = "3:1"
             "Arguments" = "8:https://spreporting.app-garden.com     [UNID] [EMAIL]  \"[TARGETDIR]\""
             "EntryPoint" = "8:"
-            "Sequence" = "3:2"
+            "Sequence" = "3:1"
             "Identifier" = "8:_E3AB1EF5_FDC4_4305_A4EF_57AC1D6DC677"
             "InstallerClass" = "11:FALSE"
             "CustomActionData" = "8:"

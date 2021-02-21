@@ -11,6 +11,6 @@
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <StartArguments>https://spreporting.app-garden.com 35F90D3D77BAD25085258138005F351F mmoen%40cookconsulting.com c:\da400xx</StartArguments>
+    <StartArguments>https://spreporting.app-garden.com 10851886A12278F08525866A004A0D99 testing  c:\AgReportMain</StartArguments>
   </PropertyGroup>
 </Project>
