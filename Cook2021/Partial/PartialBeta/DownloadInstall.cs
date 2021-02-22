@@ -686,7 +686,7 @@ namespace Partial
             }
             if (DownloadInstall.bError)
             {
-                Console.WriteLine("An Install Error has Occurred! Please Contact Support desk @ 800 425 0720 or email supportdesk@cookconsulting.net");
+                Console.WriteLine("An install error has occurred.  Please contact support by emailing support@app-garden.com or visiting www.app-garden.com and submit a support ticket.  ");
                 Console.WriteLine("Please note the following information Batch ID -> {0} and UNID -> {1}.", (object)DownloadInstall.iBatchCl, (object)DownloadInstall.sUnid);
                 Console.WriteLine("Press Enter key to continue.");
                 Console.ReadLine();
@@ -698,7 +698,7 @@ namespace Partial
                     RemovePartialFlagsService partialFlagsService = new RemovePartialFlagsService();
                     NetworkCredential networkCredential = new NetworkCredential(SDominoUserid, SDominoPwd, "");
                     partialFlagsService.Credentials = (ICredentials)networkCredential;
-                    if (!DownloadInstall.sEmail.Contains("donotreset@cookconsulting.net"))
+                    if (!DownloadInstall.sEmail.Contains("donotreset@cookconsulting.net") || DownloadInstall.sEmail.Contains("testing"))
                         partialFlagsService.REMOVEPARTIALFLAGS("Changeor.nsf", "XMLOUTPUT", DownloadInstall.sUnid);
                 }
                 catch
