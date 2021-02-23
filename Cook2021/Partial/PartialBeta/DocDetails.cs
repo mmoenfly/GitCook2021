@@ -18,7 +18,7 @@ namespace Partial
 {
   internal class DocDetails
   {
-    private const string sHost = "http://ccisupportsite.com";
+    public  string sHost ;
     public string sTarget;
     private XmlDocument pDoc;
     private NameValueCollection nvpKeys;
@@ -99,7 +99,7 @@ namespace Partial
         {
           products.sQueryEnd = "070111";
         }
-        products.sUrl = "http://ccisupportsite.com/Sheets/Version/" + products.sQueryEnd + "/" + HttpUtility.UrlPathEncode(products.sFileName);
+        products.sUrl =  sHost + "/Sheets/Version/" + products.sQueryEnd + "/" + HttpUtility.UrlPathEncode(products.sFileName);
         foreach (XmlNode childNode in xmlNode.ChildNodes)
         {
           if (childNode.Attributes["passed"].Value == "Y")

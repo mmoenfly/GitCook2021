@@ -394,6 +394,7 @@ namespace Partial
                             xmlDocument.Load(DownloadInstall.sTarget + "\\Cust.Xml");
                             NameValueCollection nameValueCollection = new NameValueCollection();
                             DocDetails dt = new DocDetails(xmlprod);
+                            dt.sHost = DownloadInstall.sHost; 
                             dt.SetProducts(inProds);
                             NameValueCollection nVals = new NameValueCollection();
                             XmlNodeList xmlNodeList = xmlDocument.DocumentElement.SelectNodes("Customer/Parms");
@@ -695,12 +696,20 @@ namespace Partial
             {
                 try
                 {
-                    RemovePartialFlagsService partialFlagsService = new RemovePartialFlagsService();
-                    NetworkCredential networkCredential = new NetworkCredential(SDominoUserid, SDominoPwd, "");
-                    partialFlagsService.Credentials = (ICredentials)networkCredential;
-                    if (!DownloadInstall.sEmail.Contains("donotreset@cookconsulting.net") || DownloadInstall.sEmail.Contains("testing"))
+                  
+
+                    if (DownloadInstall.sEmail.Contains("cookconsulting.net") || DownloadInstall.sEmail.Contains("testing"))
+                    { }
+                    else
+                    {
+                        RemovePartialFlagsService partialFlagsService = new RemovePartialFlagsService();
+                        NetworkCredential networkCredential = new NetworkCredential(SDominoUserid, SDominoPwd, "");
+                        partialFlagsService.Credentials = (ICredentials)networkCredential;
+
                         partialFlagsService.REMOVEPARTIALFLAGS("Changeor.nsf", "XMLOUTPUT", DownloadInstall.sUnid);
+                    }
                 }
+
                 catch
                 {
                 }

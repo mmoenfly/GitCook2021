@@ -4,15 +4,21 @@
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
 "ProjectName" = "8:APGReportingPartial"
-"LanguageId" = "3:1033"
+"LanguageId" = "3:0"
 "CodePage" = "3:1252"
-"UILanguageId" = "3:1033"
+"UILanguageId" = "3:0"
 "SccProjectName" = "8:"
 "SccLocalPath" = "8:"
 "SccAuxPath" = "8:"
 "SccProvider" = "8:"
     "Hierarchy"
     {
+        "Entry"
+        {
+        "MsmKey" = "8:_0C818CD8469D4AAFB1E7F1E4D75A36D3"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
         "Entry"
         {
         "MsmKey" = "8:_16EF933790B0428892744417B208A99D"
@@ -235,6 +241,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0C818CD8469D4AAFB1E7F1E4D75A36D3"
+            {
+            "SourcePath" = "8:..\\..\\..\\excel-ico3.ico"
+            "TargetName" = "8:excel-ico3.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_DCD15F87D9F24F9284E81ABD8D61A11D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_16EF933790B0428892744417B208A99D"
             {
             "SourcePath" = "8:callcleanup.vbs"
@@ -518,7 +544,7 @@
         }
         "MsiBootstrapper"
         {
-        "LangId" = "3:1033"
+        "LangId" = "3:0"
         "RequiresElevation" = "11:FALSE"
         }
         "Product"
@@ -526,11 +552,11 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:APGReporting"
         "ProductCode" = "8:{023C590D-1A41-4B5E-B51D-72856896889D}"
-        "PackageCode" = "8:{5C46DA03-D2A2-40BD-AC63-2BC310131989}"
+        "PackageCode" = "8:{60818F11-033F-456F-8186-E61AE51DA413}"
         "UpgradeCode" = "8:{8EBFCDEB-9A63-4C8E-AC05-328C6A71C62D}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
-        "RemovePreviousVersions" = "11:FALSE"
+        "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
         "ProductVersion" = "8:1.0.0"
@@ -543,7 +569,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
-        "ARPPRODUCTICON" = "8:"
+        "ARPPRODUCTICON" = "8:_0C818CD8469D4AAFB1E7F1E4D75A36D3"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"

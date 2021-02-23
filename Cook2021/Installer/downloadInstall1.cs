@@ -672,8 +672,15 @@ namespace Installer
                             process1.Start();
                             process1.WaitForExit();
                             process1.Close();
-                            fileInfo4.IsReadOnly = false;
-                            fileInfo4.Delete();
+
+
+                            if (fileInfo4.Exists)
+                            {
+                                fileInfo4.IsReadOnly = false;
+                                fileInfo4.Delete();
+                            }
+                            
+                         
                             pc.LogEvent(DownloadInstall.sUnid, "Setting ReadOnly", 0, pc.IBatchNo);
                          
                          
